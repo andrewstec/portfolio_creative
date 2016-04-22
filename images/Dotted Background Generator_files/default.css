@@ -1,0 +1,93 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font:12px Verdana,Arial,sans-serif;
+	text-align:center;
+}
+input {
+	font:12px Verdana,Arial,sans-serif;
+}
+label {
+	font-weight:normal;
+}
+fieldset {
+	background: url(inc/trans50.png);
+	padding:5px 15px;
+}
+legend {
+	color:#333;
+	font-weight:bold;
+}
+#ui_bgnd {
+	width:448px;
+	height:480px;
+	margin:100px auto 10px auto;
+	background: url(inc/ui.png) no-repeat;
+	text-align:left;
+}
+
+#content {
+	padding:90px 50px;
+}
+#footer {
+	padding:10px 0;
+	text-align:center;
+	font-size:.75em;
+	color:#aaa;
+}
+#footer a {
+	color:#aaa;
+}
+#footer a:hover {
+	color:#333;
+}
+
+.colorline {
+	clear:both;
+	margin:2px 0;
+}
+.colorline label, .colorline input {
+	float:left;
+	margin:2px 5px 2px 0;
+}
+.colorline .colorsample {
+	float:left;
+	margin:5px 30px 0 -24px;
+}
+.colorline .hexinput {
+	width:75px;
+	height:18px;
+	border:#aaa solid 1px;
+	padding:2px 0 0 4px;
+}
+.colorsample {
+	width:16px;
+	height:16px;
+}
+#height {
+	height:18px;
+	width:30px;
+	border:#aaa solid 1px;
+	padding:2px 0 0 4px;
+}
+.colorline label{
+	margin-top:5px;
+}
+#ndc2, #nbc2 {
+	margin-top:4px;
+}
+fieldset {
+	padding-bottom:8px;
+}
+#preloader {
+	width:220px;
+	height:50px;
+	/* color:#fead0e; */
+	font-weight:bold;
+	margin:-53px 0 10px 180px;
+}
+#preloader img {
+	margin-right:10px;
+}

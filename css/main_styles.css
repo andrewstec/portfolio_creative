@@ -1,0 +1,36 @@
+body {
+	margin-top: 90px;
+}
+
+h1 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	color: #12939a;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400;
+}
+
+#facer_image {
+	background-image: url(../images/creative-women-street-art-wall-art.jpg);
+	background-size: cover;
+	height: 800px;
+}
+
+.navbar-brand {
+	font-size: 2em;
+}
+
+.navbar-default {
+	padding-top: 20px;
+	padding-left: 20px;
+	background: none;
+	background-color: rgba(255, 255, 255, 0.89);
+	box-shadow: none;
+	border: none;
+
+	font-family: 'Russo One', sans-serif;
+
+}

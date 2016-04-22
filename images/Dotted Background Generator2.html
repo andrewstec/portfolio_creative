@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0101)http://www.pixelknete.de/dotter/index.php?dc1=FBAF5D&dc2=FBAF5D&bc1=110472&bc2=110472&h=700&submit=OK -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<title>Dotted Background Generator</title>
+		<meta name="author" content="Christoph Krebs">
+		<meta name="description" lang="de" content="Ein Web2.0 Generator der einen gepunkteten Website-Hintergrund mit wählbaren Farben erzeugt.">
+		<meta name="description" lang="en" content="A Web2.0 tool to generate a dotted background tile. You can choose to enter the color values or press the random Button.">
+		<meta name="keywords" lang="de" content="Hintergrund, Generator, Web2.0, Pixelknete, Dotter, Dot, Background, Muster, Mosaik, free, umsonst, download">
+		<meta name="keywords" lang="en" content="Background, Generator, Web2.0, Pixelknete, Dotter, Dot, Pattern, free, download">
+
+		<link rel="stylesheet" type="text/css" href="./Dotted Background Generator2_files/default.css">
+		<script type="text/javascript" src="./Dotted Background Generator2_files/dotter.js"></script>
+		<!--[if lt IE 7.]>
+		<script defer type="text/javascript" src="inc/pngfix.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+			<!--
+						-->
+		</style>
+	</head>
+		<body style="background:#110472 url(dotted_bg.php?dc1=FBAF5D&amp;dc2=FBAF5D&amp;bc1=110472&amp;bc2=110472&amp;h=700) repeat-x;" onload="init(&#39;dotted_bg.php?dc1=FBAF5D&amp;dc2=FBAF5D&amp;bc1=110472&amp;bc2=110472&amp;h=700&#39;);">
+		<div id="imagepreload">
+			<img src="./Dotted Background Generator2_files/dotted_bg.php" alt="" width="1" height="1">
+		</div>
+		<div id="ui_bgnd">
+			<div id="content">
+
+				<form action="http://www.pixelknete.de/dotter/index.php" method="get" enctype="text/plain">
+					<fieldset><legend>Dots</legend>
+						<div class="colorline">
+							<label for="dc1">Color A: </label>
+							<input type="text" id="dc1" class="hexinput" name="dc1" value="FBAF5D" size="7" maxlength="7" onchange="upperCase(this.id);copy_dc1_to_dc2();update_cs(this.value,&#39;dcs1&#39;);">
+							<div id="dcs1" class="colorsample" style="background:#FBAF5D;"><img id="color1" src="./Dotted Background Generator2_files/transDotFFF.png"></div>
+							<label for="ndc2" class="single"> single color only </label><input type="checkbox" id="ndc2" name="ndc2" value="1" onclick="toggleColorLock()">
+						</div>
+						<div class="colorline">
+							<label id="dc2lbl" for="dc2">Color B: </label>
+							<input type="text" id="dc2" class="hexinput" name="dc2" value="FBAF5D" size="7" maxlength="7" onchange="upperCase(this.id);update_cs(this.value,&#39;dcs2&#39;);">
+							<div id="dcs2" class="colorsample" style="background:#FBAF5D;"><img id="color2" src="./Dotted Background Generator2_files/transDotFFF.png"></div>
+						</div>
+					</fieldset><br>
+
+					<fieldset><legend>Background</legend>
+						<div class="colorline">
+							<label for="bc1">Color A: </label>
+							<input type="text" id="bc1" class="hexinput" name="bc1" value="110472" size="7" maxlength="7" onchange="upperCase(this.id);copy_bc1_to_bc2();update_cs(this.value,&#39;bcs1&#39;);">
+							<div id="bcs1" class="colorsample" style="background:#110472;"><img id="color3" src="./Dotted Background Generator2_files/transBgndFFF.png"></div>
+							<label for="nbc2"> single color only </label><input type="checkbox" id="nbc2" name="nbc2" value="1" onclick="toggleBGColorLock()">
+						</div>
+						<div class="colorline">
+							<label id="bc2lbl" for="bc2">Color B: </label>
+							<input type="text" id="bc2" class="hexinput" name="bc2" value="110472" size="7" maxlength="7" onchange="upperCase(this.id);update_cs(this.value,&#39;bcs2&#39;);">
+							<div id="bcs2" class="colorsample" style="background:#110472;"><img id="color4" src="./Dotted Background Generator2_files/transBgndFFF.png"></div>
+						</div>
+					</fieldset><br>
+
+					<fieldset><legend>Size</legend>
+						<label for="h">Height: </label>&#8201;
+						<input type="text" id="height" name="h" value="700" size="3" maxlength="3"> px<br>
+					</fieldset><br>
+
+					<div id="preloader" style="visibility: hidden;">
+						<img src="./Dotted Background Generator2_files/ajax-loader2.gif" alt="loading..." style="float:left;">
+						<p>loading <br>background...</p>
+					</div>
+
+					<input type="submit" name="submit" style="width:240px;height:40px;float:left;margin-right:5px;" value="OK">
+				</form>
+				<form action="http://www.pixelknete.de/dotter/index.php" method="get" enctype="text/plain">
+					<input type="submit" name="submit" style="width:100px;height:40px" value="Random">
+				</form>
+
+				<div id="footer">
+					<a href="http://www.pixelknete.de/2007/07/23/pixelknetes-background-dotter/">Please leave a comment</a>  | 2016 <a href="http://www.pixelknete.de/">PIXELKNETE</a><br>
+					--&gt;2165359 juicy backgrounds served <!-- since 24. July 2007 -->&lt;--
+				</div>
+
+			</div>
+		</div>
+
+	<script src="./Dotted Background Generator2_files/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript"> _uacct = "UA-2293911-1"; urchinTracker(); </script>
+
+	
+
+
+
+</body></html>
